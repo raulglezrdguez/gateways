@@ -71,7 +71,13 @@ function ShowPeripherals({ gateway }) {
   };
 
   return (
-    <Stack direction="column" spacing={2} alignItems="center" marginTop={0}>
+    <Stack
+      direction="column"
+      gap={2}
+      alignItems="center"
+      marginTop={0}
+      flexWrap={"wrap"}
+    >
       <Box
         component="div"
         sx={{
@@ -113,7 +119,13 @@ function ShowPeripherals({ gateway }) {
         )}
       </Box>
       {gateway.peripherals.length < 10 && addVisible && (
-        <>
+        <Stack
+          direction="column"
+          gap={2}
+          alignItems="center"
+          marginTop={0}
+          flexWrap={"wrap"}
+        >
           <TextField
             required
             id="uid"
@@ -179,7 +191,7 @@ function ShowPeripherals({ gateway }) {
           >
             Add peripheral
           </Button>
-        </>
+        </Stack>
       )}
       {visible && (
         <Stack direction="column" spacing={2} alignItems="center" marginTop={3}>

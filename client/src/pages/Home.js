@@ -8,7 +8,14 @@ function Home() {
   const { gateways } = useContext(AppContext);
 
   return (
-    <Stack direction="column" spacing={2} alignItems="center" marginTop={3}>
+    <Stack
+      direction="row"
+      gap={2}
+      justifyContent={"center"}
+      alignItems="center"
+      marginTop={3}
+      flexWrap={"wrap"}
+    >
       {gateways.map((g) => (
         <ShowGateway key={g.id} gateway={g} />
       ))}
