@@ -30,18 +30,23 @@ npm start
 
 ## Gateways routes
 ### get gateways
+```
 Method: GET, http://localhost:4000/api/gateway
+```
 
 ### get gateway
+```
 Method: GET, http://localhost:4000/api/gateway
 Params, Query params
 Key: id
 Value: 61f318f4e0b6282a7d25c81d
+```
 
 ### create gateway
+```
 Method POST, http://localhost:4000/api/gateway
 Body, raw, JSON:
-```
+
 {
     "serial": "SERIAL", 
     "name": "Name", 
@@ -50,9 +55,10 @@ Body, raw, JSON:
 ```
 
 ### update gateway
+```
 Method PATCH, http://localhost:4000/api/gateway
 Body, raw, JSON:
-```
+
 {
     "id": "61f325c496d178b8a73d6eb2",
     "serial": "NEW SERIAL", 
@@ -62,9 +68,10 @@ Body, raw, JSON:
 ```
 
 ### delete gateway
+```
 Method DELETE, http://localhost:4000/api/gateway
 Body, raw, JSON:
-```
+
 {
     "id": "61f325c496d178b8a73d6eb2"
 }
@@ -72,18 +79,23 @@ Body, raw, JSON:
 
 ## Peripherals
 ### get peripherals
+```
 Method: GET, http://localhost:4000/api/peripheral
+```
 
 ### get peripheral
+```
 Method: GET, http://localhost:4000/api/peripheral
 Params, Query params
 Key: id
 Value: 61f318f4e0b6282a7d25c81d
+```
 
 ### create peripheral
+```
 Method POST, http://localhost:4000/api/peripheral
 Body, raw, JSON:
-```
+
 {
     "gatewayId": "61f318f4e0b6282a7d25c81d", 
     "uid": 1, 
@@ -93,9 +105,10 @@ Body, raw, JSON:
 ```
 
 ### update peripheral
+```
 Method PATCH, http://localhost:4000/api/peripheral
 Body, raw, JSON:
-```
+
 {
     "id": "61f32dc37a822ee314f50818", 
     "uid": 1, 
@@ -105,9 +118,10 @@ Body, raw, JSON:
 ```
 
 ### delete peripheral
+```
 Method DELETE, http://localhost:4000/api/peripheral
 Body, raw, JSON:
-```
+
 {
     "id": "61f32dc37a822ee314f50818"
 }
