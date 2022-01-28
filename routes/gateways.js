@@ -144,7 +144,6 @@ router.delete("/gateway", async function (req, res) {
 router.get("/gateway", async function (req, res) {
   if (req && req.query) {
     const { id } = req.query;
-    console.log(id);
 
     if (id) {
       try {
